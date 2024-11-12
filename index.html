@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper & Scissors</title>
+    <link rel="stylesheet" href="rock-paper-scissors.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./rock-paper-scssisors-images/favicon.jpg"
+    />
+  </head>
+  <body>
+    <h1>Rock, Paper & Scissors Game</h1>
+
+    <div class="container">
+      <div class="buttons">
+        <button onclick="playGame('rock')">
+          <img
+            class="images"
+            src="rock-paper-scssisors-images/rock-emoji.png"
+          />
+        </button>
+        <button onclick="playGame('paper')">
+          <img
+            class="images"
+            src="rock-paper-scssisors-images/paper-emoji.png"
+          />
+        </button>
+        <button onclick="playGame('scissors')">
+          <img
+            class="images"
+            src="rock-paper-scssisors-images/scissors-emoji.png"
+          />
+        </button>
+      </div>
+
+      <div
+        style="
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        "
+        class="info"
+      >
+        <strong><p class="result"></p></strong>
+        <p class="picks"></p>
+        <p class="score"></p>
+      </div>
+    </div>
+
+    <div class="reset">
+      <button
+        onclick=" 
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score')
+      updateScore();
+      location.reload();
+      "
+      >
+        Reset
+      </button>
+    </div>
+
+    <script src="rock-paper-scissors.js"></script>
+  </body>
+</html>
