@@ -67,11 +67,11 @@ function playGame(playerPick) {
   document.querySelector(".picks").innerHTML = `
   <div style="display: flex;  justify-content: center">
   <div>
-  <img style="width: 45%; height: 60%" src="rock-paper-scssisors-images/${playerPick}-emoji.png" />
+  <img style="width: 50%; height: 80%" src="rock-paper-scssisors-images/${playerPick}-emoji.png" />
   <p style="font-size: 20px">You</p>
   </div>
    <div>
-  <img style="width: 45%; height: 60%" src="rock-paper-scssisors-images/${PC}-emoji.png" />
+  <img style="width: 50%; height: 80%" src="rock-paper-scssisors-images/${PC}-emoji.png" />
   <p style="font-size: 20px">Computer</p>
   </div>
   </div>
@@ -81,5 +81,5 @@ function playGame(playerPick) {
 function updateScore() {
   document.querySelector(
     ".score"
-  ).innerHTML = `wins: ${score.wins}, losses: ${score.losses} ,ties: ${score.ties}`;
+  ).innerHTML = `<br /> wins: ${score.wins}, losses: ${score.losses} ,ties: ${score.ties}`;
 }
